@@ -1,5 +1,5 @@
 # GamSeong-HwaBaek
-Main repository for 감성화백 project.
+Main repository for 감성화백(GamSeong-HwaBaek) project.
 
 ### Our Team 
  - **Nahyuk Lee**([@NahyukLEE](https://github.com/NahyukLEE)) (School of Computer Science & Engineering :desktop_computer:, Chung-Ang Univ.)
@@ -8,3 +8,6 @@ Main repository for 감성화백 project.
     - Backend(main) / Frontend(sub) Developer
  - **Eunseo Choi**([@es3442](https://github.com/es3442)) (School of Computer Science & Engineering :desktop_computer:, Chung-Ang Univ.)
     - Frontend(main) / Backend(sub) Developer
+
+## Pipeline
+![pipeline](imgs/pipeline.png)
