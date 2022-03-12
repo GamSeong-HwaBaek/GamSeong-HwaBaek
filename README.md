@@ -1,4 +1,4 @@
-# GamSeong-HwaBaek
+# GamSeong-HwaBaek: Emotion-based Neural Paintings' Style Transfer
 Main repository for 감성화백(GamSeong-HwaBaek) project.
 
 ### Our Team 
