@@ -11,3 +11,21 @@ Main repository for 감성화백(GamSeong-HwaBaek) project.
 
 ## Pipeline
 ![pipeline](imgs/pipeline.png)
+
+
+## Test Environment
+- MacOS Monterey
+- Python 3.8.12
+
+
+## Prepare Data
+#### Install dependencies
+```
+pip install -r requirements.txt
+```
+
+#### Download WikiArt-Emotion & WikiArt Dataset
+Painting images will be downloaded in `data/image`, it will takes long time.
+```
+python download_dataset.py
+```
