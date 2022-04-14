@@ -22,11 +22,13 @@ def select_first(driver):
 def get_content(driver):
     html = driver.page_source
     soup = BeautifulSoup(html, 'lxml')
+
     # 본문 내용
     try:
         content = soup.select('div.MOdxS')[0].text
     except:
         content = ''
+
     # 해시태그
     tags = re.findall(r'#[^\s#,\\]+', content)
 
@@ -38,11 +40,13 @@ def get_content(driver):
     #    like = soup.select('section.EDfFK.ygqzn')[0].findAll('span')[-1].text
     #except:
     #    like = 0
+
     # 위치
     #try:
     #    place = soup.select('div.M30cS')[0].text
     #except:
     #    place = ''
+
     data = [content, tags]#, date, like, place, tags]
     return data
 
@@ -53,7 +57,7 @@ def move_next(driver):
     time.sleep(3)
 
 # 크롬 브라우저 열기
-driver = webdriver.Chrome('chromedriver')
+driver = webdriver.Chrome(r'C:\\Users\\nahyuklee\\Desktop\\GamSeong-HwaBaek\\insta_crawler\\chromedriver.exe')
 #driver = webdriver.Safari(executable_path='/usr/bin/safaridriver')
 #driver = webdriver.Firefox(executable_path='./geckodriver')
 
@@ -78,7 +82,6 @@ time.sleep(5)
 word = str('믿음')
 url = insta_searching(word)
 
-# 검색 결과 페이지 열기
 driver.get(url)
 time.sleep(8)
 
