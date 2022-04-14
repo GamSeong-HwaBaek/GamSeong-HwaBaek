@@ -65,12 +65,12 @@ driver.get('https://www.instagram.com')
 time.sleep(3)
 
 # 인스타그램 로그인을 위한 계정 정보
-email = '01025575493'
+email = ''
 input_id = driver.find_elements_by_css_selector('input._2hvTZ.pexuQ.zyHYP')[0]
 input_id.clear()
 input_id.send_keys(email)
 
-password = 'RickyLee23#'
+password = ''
 input_pw = driver.find_elements_by_css_selector('input._2hvTZ.pexuQ.zyHYP')[1]
 input_pw.clear()
 input_pw.send_keys(password)
